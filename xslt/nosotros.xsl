@@ -17,7 +17,7 @@
             <body>
                 <!-- Navbar -->
                 <header>
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white shadow-lg fixed-top">
                         <div class="container-fluid">
                             <a class="navbar-brand fw-bold fs-3" href="/">KFTROS</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -27,10 +27,10 @@
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link active fs-5" aria-current="page" href="/">Inicio</a>
+                                        <a class="nav-link fs-5" href="/">Inicio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link fs-5" href="../xml/nosotros.xml">Nosotros</a>
+                                        <a class="nav-link active fs-5" aria-current="page" href="../xml/nosotros.xml">Nosotros</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link fs-5" href="../xml/productos.xml">Productos</a>
@@ -48,10 +48,10 @@
                 </header>
                 
                 <!-- Main -->
-                <main class="min-vh-100">
+                <main class="min-vh-100 pt-5">
                     
                     <!-- Nuestra historia -->
-                    <div class="container py-5 mt-5">
+                    <div class="container">
                         <section class="row">
                             <div class="col-md-6 text-center align-self-center">
                                 <h1>Nuestra historia</h1>
@@ -62,17 +62,18 @@
                                     Cansados del café comercial y oscuro que oculta los verdaderos sabores del grano, decidimos adentrarnos en el mundo del café de especialidad. Queríamos descubrir las notas florales de un lavado de Etiopía, la dulzura acaramelada de un origen colombiano y la complejidad de un proceso natural. Y lo más importante: queríamos compartir ese descubrimiento contigo.
                                 </p>
                             </div>
-                            <div class="col-md-6 text-center">
-                                <img src="../assets/images/nosotros.jpg" alt="Nuestra historia" class="img-fluid rounded w-50"></img>
+                            <div class="col-md-6 text-center align-self-center w-50 h-75">
+                                <img src="../assets/images/nosotros.jpg" alt="Almacen con un trabajador de café"
+                                     class="img-fluid rounded w-100 h-100 object-fit-cover"></img>
                             </div>
                         </section>
                     </div>
                     
                     <!-- Nuestro equipo -->
-                    <div class="container-fluid p-5 mt-5 bg-dark text-white">
+                    <div class="container-fluid p-5 bg-dark text-white">
                         <section class="row">
                             <!-- carrucel de miembros del equipo -->
-                            <div class="col-md-6 mt-4">
+                            <div class="col-md-6 mt-4 align-self-center">
                                 <div id="carouselEquipo" class="carousel carousel-dark slide">
                                     <div class="carousel-indicators">
                                         <xsl:for-each select="//persona">
@@ -133,6 +134,26 @@
                                 </p>
                             </div>
                         </section>
+                    </div>
+                    
+                    <!-- CTA -->
+                    <div class="container-fluid my-5">
+                        <div class="text-center rounded-3">
+                            <i class="fas fa-coffee mt-4 mb-3 d-block" style="font-size: 4rem;"></i>
+                            <h1 class="mb-3">Vive la experiencia KFTROS</h1>
+                            <p class="col-lg-8 mx-auto fs-5">
+                                Descubre el café de especialidad que ha cautivado a miles de amantes del buen café. Cada grano seleccionado, cada taza preparada con pasión, es una invitación a explorar un mundo de sabores únicos.
+                            </p>
+                            <div class="d-inline-flex gap-2 mb-5">
+                                <a href="../xml/productos.xml" class="d-inline-flex align-items-center btn btn-warning btn-lg px-4 rounded-pill text-dark" type="button">
+                                    Descubre nuestros productos
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </a>
+                                <a href="../views/contacto.html" class="btn btn-outline-light btn-lg px-4 rounded-pill bg-dark" type="button">
+                                    Contáctanos
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
                 </main>
