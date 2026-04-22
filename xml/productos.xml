@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/xsl/productos.xsl"?>
+<productos>
+    <cafe>
+        <producto id="1">
+            <nombre>Colombia Arabica</nombre>
+            <descripcion>Un café suave y aromático, con notas de frutas cítricas y un toque de chocolate.</descripcion>
+            <precio>15.99</precio>
+            <disponibilidad>En stock</disponibilidad>
+        </producto>
+        <producto id="2">
+            <nombre>Etiopía Yirgacheffe</nombre>
+            <descripcion>Un café de especialidad con un perfil de sabor floral y afrutado, ideal para los amantes del café de origen único.</descripcion>
+            <precio>18.99</precio>
+            <disponibilidad>En stock</disponibilidad>
+        </producto>
+        <producto id="3">
+            <nombre>Brasil Santos</nombre>
+            <descripcion>Un café con cuerpo medio y un sabor equilibrado, con notas de nueces y chocolate.</descripcion>
+            <precio>12.99</precio>
+            <disponibilidad>Agotado</disponibilidad>
+        </producto>
+    </cafe>
+    <utensilios>
+        <producto id="4">
+            <nombre>Extractor de Café</nombre>
+            <descripcion>Un extractor de café de alta calidad, ideal para preparar el mejor café en casa.</descripcion>
+            <precio>89.99</precio>
+            <disponibilidad>En stock</disponibilidad>
+        </producto>
+        <producto id="5">
+            <nombre>Kit de Preparación de Café</nombre>
+            <descripcion>Incluye todo lo necesario para preparar el café perfecto en casa.</descripcion>
+            <precio>49.99</precio>
+            <categoria>Accesorios</categoria>
+            <disponibilidad>En stock</disponibilidad>
+        </producto>
+        <producto id="6">
+            <nombre>Taza de Cerámica KFTROS</nombre>
+            <descripcion>Una taza elegante y resistente, perfecta para disfrutar de tu café favorito.</descripcion>
+            <precio>12.99</precio>
+            <categoria>Merchandising</categoria>
+            <disponibilidad>Agotado</disponibilidad>
+        </producto>
+    </utensilios>
+    <suscripciones>
+        <producto id="7">
+            <suscripciones>
+                <nombre>Suscripción de Café Mensual</nombre>
+                <descripcion>Recibe una selección de cafés de especialidad cada mes en tu puerta.</descripcion>
+                <precio>29.99</precio>
+                <categoria>Suscripción</categoria>
+                <disponibilidad>En stock</disponibilidad>
+            </suscripciones>
+        </producto>
+        <producto id="8">
+            <suscripciones>
+                <nombre>Suscripción de Café Trimestral</nombre>
+                <descripcion>Recibe una selección de cafés de especialidad cada tres meses en tu puerta.</descripcion>
+                <precio>79.99</precio>
+                <categoria>Suscripción</categoria>
+                <disponibilidad>En stock</disponibilidad>
+            </suscripciones>
+        </producto>
+    </suscripciones>
+</productos>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/xslt/blog.xsl"?>
+<blog_cafe>
+    
+    <articulo id="1">
+        <titulo>Descubriendo el origen: Etiopía vs. Colombia</titulo>
+        <autor>María Barista</autor>
+        <fecha>2026-04-15</fecha>
+        <categoria>Orígenes</categoria>
+        <imagen>/assets/images/blog/imagen1.png</imagen>
+        <resumen>Un viaje por los perfiles de sabor de dos gigantes del café de especialidad. ¿Prefieres las delicadas notas florales africanas o el cuerpo dulce y achocolatado sudamericano?</resumen>
+        <etiquetas>
+            <etiqueta>Etiopía</etiqueta>
+            <etiqueta>Colombia</etiqueta>
+            <etiqueta>Cata</etiqueta>
+        </etiquetas>
+    </articulo>
+    
+    <articulo id="2">
+        <titulo>Guía definitiva para preparar un V60 perfecto</titulo>
+        <autor>Carlos Roaster</autor>
+        <fecha>2026-04-18</fecha>
+        <categoria>Métodos de Preparación</categoria>
+        <imagen>/assets/images/blog/imagen2.png</imagen>
+        <resumen>Aprende los secretos del ratio (1:15), el tamaño de la molienda y la técnica de vertido por pulsos para sacarle el máximo partido a tu cafetera Hario V60.</resumen>
+        <etiquetas>
+            <etiqueta>V60</etiqueta>
+            <etiqueta>Filtrado</etiqueta>
+            <etiqueta>Recetas</etiqueta>
+        </etiquetas>
+    </articulo>
+    
+    <articulo id="3">
+        <titulo>¿Por qué el café de especialidad se tuesta más claro?</titulo>
+        <autor>Elena Q-Grader</autor>
+        <fecha>2026-04-20</fecha>
+        <categoria>Tueste</categoria>
+        <imagen>/assets/images/blog/imagen3.png</imagen>
+        <resumen>El tueste ligero no es una simple moda hipster. Descubre cómo un tueste omni o ligero ayuda a respetar el trabajo del productor y a resaltar el 'terroir' del grano.</resumen>
+        <etiquetas>
+            <etiqueta>Tueste</etiqueta>
+            <etiqueta>Química</etiqueta>
+        </etiquetas>
+    </articulo>
+    
+    <articulo id="4">
+        <titulo>¿Qué es exactamente un proceso Natural, Lavado y Honey?</titulo>
+        <autor>María Barista</autor>
+        <fecha>2026-04-21</fecha>
+        <categoria>Procesos</categoria>
+        <imagen>/assets/images/blog/imagen4.png</imagen>
+        <resumen>Desde la cereza en la rama hasta el grano verde. Explicamos cómo el proceso post-cosecha en la finca define si tu café sabrá a frutas fermentadas o tendrá una acidez brillante y limpia.</resumen>
+        <etiquetas>
+            <etiqueta>Finca</etiqueta>
+            <etiqueta>Procesos</etiqueta>
+            <etiqueta>Natural</etiqueta>
+            <etiqueta>Lavado</etiqueta>
+        </etiquetas>
+    </articulo>
+    
+</blog_cafe>

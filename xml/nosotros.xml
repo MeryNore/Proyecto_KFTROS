@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/nosotros.xsl"?>
+<personal>
+    <persona dni="76543210A">
+        <datos_personales>
+            <nombre_completo>
+                <nombre>Mario</nombre>
+                <apellido1>Pérez</apellido1>
+                <apellido2>García</apellido2>
+            </nombre_completo>
+            <email>mario_perez@kftros.com</email>
+            <telefono>+34 942 123 456</telefono>
+            <direccion>
+                <calle>Calle del Café, 123</calle>
+                <ciudad>Santander</ciudad>
+                <codigo_postal>39001</codigo_postal>
+                <pais>España</pais>
+            </direccion>
+        </datos_personales>
+        <datos_empresa>
+            <puesto>CEO y Fundador</puesto>
+            <fecha_contratacion>2020-01-15</fecha_contratacion>
+            <departamento>Dirección</departamento>
+        </datos_empresa>
+        <imagen>/assets/images/personal/personal1.png</imagen>
+    </persona>
+    <persona dni="76543210B">
+        <datos_personales>
+            <nombre_completo>
+                <nombre>Julia</nombre>
+                <apellido1>García</apellido1>
+                <apellido2>Martínez</apellido2>
+            </nombre_completo>
+            <email>julia_garcia@kftros.com</email>
+            <telefono>+34 942 123 457</telefono>
+            <direccion>
+                <calle>Avenida del Espresso, 456</calle>
+                <ciudad>Santander</ciudad>
+                <codigo_postal>39002</codigo_postal>
+                <pais>España</pais>
+            </direccion>
+        </datos_personales>
+        <datos_empresa>
+            <puesto>Analista de Ventas</puesto>
+            <fecha_contratacion>2021-03-20</fecha_contratacion>
+            <departamento>Ventas</departamento>
+        </datos_empresa>
+        <imagen>/assets/images/personal/personal2.png</imagen>
+    </persona>
+    <persona dni="76543210C">
+        <datos_personales>
+            <nombre_completo>
+                <nombre>Antonio José</nombre>
+                <apellido1>Rodríguez</apellido1>
+                <apellido2>García</apellido2>
+            </nombre_completo>
+            <email>antonio_rodriguez@kftros.com</email>
+            <telefono>+34 942 123 458</telefono>
+            <direccion>
+                <calle>Calle del Té, 789</calle>
+                <ciudad>Santander</ciudad>
+                <codigo_postal>39003</codigo_postal>
+                <pais>España</pais>
+            </direccion>
+        </datos_personales>
+        <datos_empresa>
+            <puesto>Pedidos y atención al cliente</puesto>
+            <fecha_contratacion>2022-06-10</fecha_contratacion>
+            <departamento>Almacén</departamento>
+        </datos_empresa>
+        <imagen>/assets/images/personal/personal3.png</imagen>
+    </persona>
+    <persona dni="76543210D">
+        <datos_personales>
+            <nombre_completo>
+                <nombre>Carla</nombre>
+                <apellido1>García</apellido1>
+                <apellido2>Lopez</apellido2>
+            </nombre_completo>
+            <email>carla_garcia@kftros.com</email>
+            <telefono>+34 942 123 459</telefono>
+            <direccion>
+                <calle>Avenida del Café, 101</calle>
+                <ciudad>Santander</ciudad>
+                <codigo_postal>39004</codigo_postal>
+                <pais>España</pais>
+            </direccion>
+        </datos_personales>
+        <datos_empresa>
+            <puesto>Especialista barista</puesto>
+            <fecha_contratacion>2021-09-15</fecha_contratacion>
+            <departamento>Operaciones</departamento>
+        </datos_empresa>
+        <imagen>/assets/images/personal/personal4.png</imagen>
+    </persona>
+</personal>
