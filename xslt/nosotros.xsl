@@ -48,12 +48,12 @@
                 </header>
                 
                 <!-- Main -->
-                <main class="min-vh-100 pt-5">
+                <main>
                     
                     <!-- Nuestra historia -->
-                    <div class="container">
-                        <section class="row">
-                            <div class="col-md-6 text-center align-self-center">
+                    <div class="container my-5 p-5 min-vh-100 d-flex">
+                        <div class="row w-100 mx-auto">
+                            <div class="col-md-6 text-center align-self-center ">
                                 <h1 class="fw-bold fs-1 mb-3">
                                     <i class="fa-solid fa-fingerprint"></i>
                                     Nuestra historia
@@ -65,18 +65,18 @@
                                     Cansados del café comercial y oscuro que oculta los verdaderos sabores del grano, decidimos adentrarnos en el mundo del café de especialidad. Queríamos descubrir las notas florales de un lavado de Etiopía, la dulzura acaramelada de un origen colombiano y la complejidad de un proceso natural. Y lo más importante: queríamos compartir ese descubrimiento contigo.
                                 </p>
                             </div>
-                            <div class="col-md-6 text-center align-self-center w-50 h-75">
+                            <div class="col-md-6 text-center align-self-center p-lg-5">
                                 <img src="../assets/images/nosotros.jpg" alt="Almacen con un trabajador de café"
-                                     class="img-fluid rounded w-100 h-100 object-fit-cover"></img>
+                                     class="img-fluid rounded w-75 object-fit-cover"></img>
                             </div>
-                        </section>
+                        </div>
                     </div>
                     
                     <!-- Nuestro equipo -->
-                    <div class="container-fluid p-5 bg-dark text-white">
-                        <section class="row">
+                    <div class="container-fluid p-5 bg-dark text-white min-vh-100 d-flex">
+                        <div class="row w-100 mx-auto">
                             <!-- carrucel de miembros del equipo -->
-                            <div class="col-md-6 align-self-center">
+                            <div class="col-md-6 align-self-center p-lg-5">
                                 <div id="carouselEquipo" class="carousel slide">
                                     <div class="carousel-inner overflow-hidden">
                                         <xsl:for-each select="//persona">
@@ -128,7 +128,7 @@
                                 </div>
                             </div>
                             
-                            <div class="col-md-6 align-self-center">
+                            <div class="col-md-6 align-self-center p-5">
                                 <h1 class="fw-bold fs-1 mb-3">
                                     Nuestro equipo
                                     <i class="fa-solid fa-people-roof"></i>
@@ -138,7 +138,7 @@
                                     En KFTROS, nuestro equipo es el corazón de nuestra misión. Cada miembro aporta su pasión, experiencia y dedicación para ofrecerte el mejor café de especialidad. Desde los baristas que perfeccionan cada taza hasta los expertos en selección de granos que viajan por el mundo en busca de los mejores orígenes, nuestro equipo trabaja con un solo objetivo: brindarte una experiencia cafetera excepcional.
                                 </p>
                             </div>
-                        </section>
+                        </div>
                     </div>
                     
                     <!-- CTA -->
@@ -149,7 +149,7 @@
                             <p class="col-lg-8 mx-auto fs-5">
                                 Descubre el café de especialidad que ha cautivado a miles de amantes del buen café. Cada grano seleccionado, cada taza preparada con pasión, es una invitación a explorar un mundo de sabores únicos.
                             </p>
-                            <div class="d-inline-flex gap-2 mb-5">
+                            <div class="d-inline-flex gap-2 mb-5 flex-wrap justify-content-center">
                                 <a href="../xml/productos.xml" class="d-inline-flex align-items-center btn btn-warning btn-lg px-4 rounded-pill text-dark" type="button">
                                     Descubre nuestros productos
                                     <i class="fas fa-arrow-right ms-2"></i>

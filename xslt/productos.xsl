@@ -48,10 +48,10 @@
                 </header>
 
                 <!-- Main -->
-                <main class="min-vh-100 pt-5">
+                <main>
 
                     <!-- SECCIÓN DE CAFÉS -->
-                    <div class="container my-5">
+                    <div class="container p-5 my-5">
                         <div class="text-center mb-5 pt-4 pb-3">
                             <h2 class="fw-bold fs-1 mb-3">
                                 <i class="fa-solid fa-coffee"></i>
@@ -109,7 +109,7 @@
                     </div>
 
                     <!-- SECCIÓN DE UTENSILIOS -->
-                    <div class="container-fluid p-5 bg-light my-5 bg-dark text-white">
+                    <div class="container-fluid p-5 my-5 bg-dark text-white">
                         <div class="container">
                             <div class="text-center mb-5 pt-4 pb-3">
                                 <h2 class="fw-bold fs-1 mb-3">
@@ -169,7 +169,7 @@
                     </div>
 
                     <!-- SECCIÓN DE SUSCRIPCIONES -->
-                    <div class="container my-5 pb-5">
+                    <div class="container p-5 my-5">
                         <div class="text-center mb-5 pt-4 pb-3">
                             <h2 class="fw-bold fs-1 mb-3">
                                 <i class="fa-solid fa-calendar-check"></i>

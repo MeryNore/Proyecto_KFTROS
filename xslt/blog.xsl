@@ -48,9 +48,9 @@
                 </header>
 
                 <!-- Main -->
-                <main class="min-vh-100 pt-5">
+                <main>
                     <!-- Sección de introducción -->
-                    <div class="container">
+                    <div class="container my-5">
                         <div class="text-center mb-5 pt-5 pb-3">
                             <h1 class="fw-bold fs-1">
                                 <i class="fa-solid fa-blog"></i>
@@ -64,31 +64,31 @@
                     <div class="container my-5">
                         <div class="row g-4">
                             <xsl:for-each select="blog_cafe/articulo">
-                                <div class="col-12">
-                                    <div class="card border-1 shadow-sm overflow-hidden rounded-4 h-100">
-                                        <div class="row g-0">
+                                <div class="col-12 mb-4">
+                                    <div class="card border-1 shadow-sm overflow-hidden rounded-4 card-hover h-100">
+                                        <div class="row g-0 h-100">
                                             <!-- Imagen del artículo -->
-                                            <div class="col-md-6">
+                                            <div class="col-12 col-md-4 col-lg-6">
                                                 <img class="blog-card-img" src="{imagen}" alt="{titulo}"/>
                                             </div>
                                             
-                                            <div class="col-md-6">
-                                                <div class="card-body h-100 d-flex flex-column">
+                                            <div class="col-12 col-md-8 col-lg-6">
+                                                <div class="card-body d-flex flex-column h-100 p-4 p-md-5">
                                                     <!-- Categoría -->
-                                                    <div class="mb-2">
-                                                        <span class="badge bg-warning text-dark fw-bold">
+                                                    <div class="mb-3">
+                                                        <span class="badge bg-warning text-dark fw-bold px-3 py-2">
                                                             <i class="fas fa-tag me-1"></i>
                                                             <xsl:value-of select="categoria"/>
                                                         </span>
                                                     </div>
                                                     
                                                     <!-- Título -->
-                                                    <h4 class="card-title fw-bold mb-2">
+                                                    <h4 class="card-title fw-bold mb-3">
                                                         <xsl:value-of select="titulo"/>
                                                     </h4>
                                                     
                                                     <!-- Meta información -->
-                                                    <div class="d-flex gap-3 mb-3 text-muted small">
+                                                    <div class="d-flex gap-3 mb-4 text-muted small">
                                                         <span>
                                                             <i class="fas fa-user me-1"></i>
                                                             <xsl:value-of select="autor"/>
@@ -101,14 +101,14 @@
                                                     </div>
                                                     
                                                     <!-- Resumen -->
-                                                    <p class="card-text text-muted mb-3 lh-lg flex-grow-1">
+                                                    <p class="card-text text-muted mb-4 flex-grow-1">
                                                         <xsl:value-of select="resumen"/>
                                                     </p>
                                                     
                                                     <!-- Etiquetas -->
-                                                    <div class="mb-3">
+                                                    <div class="mb-4">
                                                         <xsl:for-each select="etiquetas/etiqueta">
-                                                            <span class="badge bg-light text-dark me-1 mb-1">
+                                                            <span class="badge bg-light text-dark me-2 mb-1 border py-2">
                                                                 #<xsl:value-of select="."/>
                                                             </span>
                                                         </xsl:for-each>
@@ -128,14 +128,14 @@
                     </div>
 
                     <!-- CTA -->
-                    <div class="container-fluid my-5">
+                    <div class="container-fluid p-5 my-5">
                         <div class="text-center rounded-3">
                             <i class="fas fa-pen-fancy mt-4 mb-3 d-block" style="font-size: 4rem;"></i>
                             <h1 class="mb-3">¿Tienes una historia cafetera?</h1>
                             <p class="col-lg-8 mx-auto fs-5">
                                 Nos encantaría conocer tus experiencias, recetas y descubrimientos en el mundo del café. Contáctanos para colaborar en el blog.
                             </p>
-                            <div class="d-inline-flex gap-2 mb-5">
+                            <div class="d-inline-flex gap-2 mb-5 flex-wrap justify-content-center">
                                 <a href="../views/contacto.html" class="d-inline-flex align-items-center btn btn-warning btn-lg px-4 rounded-pill text-dark" type="button">
                                     Comparte tu historia
                                     <i class="fas fa-arrow-right ms-2"></i>

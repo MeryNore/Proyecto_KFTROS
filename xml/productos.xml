@@ -20,6 +20,18 @@
             <precio>12.99</precio>
             <disponibilidad>Agotado</disponibilidad>
         </producto>
+        <producto>
+            <nombre>Costa Rica Tarrazú</nombre>
+            <descripcion>Un café de origen único con un sabor afrutado y una acidez equilibrada.</descripcion>
+            <precio>16.99</precio>
+            <disponibilidad>En stock</disponibilidad>
+        </producto>
+        <producto>
+            <nombre> Guatemala Antigua </nombre>
+            <descripcion> Un café de origen único con un sabor complejo y una acidez equilibrada. </descripcion>
+            <precio>17.99</precio>
+            <disponibilidad>En stock</disponibilidad>
+        </producto>
     </cafe>
     <utensilios>
         <producto id="4">

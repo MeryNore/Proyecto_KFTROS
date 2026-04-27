@@ -1,16 +1,20 @@
-body, html {
+body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    display: flex;
+    flex-direction: column;
 }
 
-section{
-    min-height: 100vh;
-    min-width: 100%;
+main {
+    flex-grow: 1;
 }
+
+
+/*******************************************************************************************************
+/********************************************      INDEX    *********************************************
+/*******************************************************************************************************/
 
 .body_index {
     background-image: url('../assets/images/fondo_cafe.jpg');
@@ -53,11 +57,31 @@ section{
     color: #a0522d;
 }
 
+/* Navbar del index con scroll */
+#navbar {
+    transition: all 0.3s ease;
+}
+
+#navbar.scrolled {
+    background-color: rgba(33, 37, 41, 0.95) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/*******************************************************************************************************
+/********************************************   NOSOTROS   *********************************************
+/*******************************************************************************************************/
+
 /* Estilos para el carrusel del equipo */
 .carousel-img {
     height: 400px;
     object-fit: cover;
 }
+
+
+/*******************************************************************************************************
+/********************************************      BLOG    *********************************************
+/*******************************************************************************************************/
 
 /* Estilos para imagenes del blog */
 .blog-card-img {
@@ -67,12 +91,9 @@ section{
     display: block;
 }
 
-/* Navbar del index con scroll */
-#navbar {
-    transition: all 0.3s ease;
-}
-
-#navbar.scrolled {
-    background-color: rgba(33, 37, 41, 0.95) !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+/* Magia para móviles: Evita que la imagen sea gigante */
+@media (max-width: 767px) {
+    .blog-card-img {
+        height: 250px; /* Le ponemos un tope de altura solo en móviles */
+    }
 }
