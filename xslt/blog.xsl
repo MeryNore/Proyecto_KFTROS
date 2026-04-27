@@ -1,44 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
-        <html> 
+        <html lang="es">
             <head>
-                <style>
-                    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4ece1; color: #333; padding: 20px; }
-                    h1 { text-align: center; color: #4a3b32; }
-                    .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1000px; margin: auto; }
-                    .card { background-color: white; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-top: 4px solid #c49a6c; }
-                    .card-imagen { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; margin-bottom: 15px; }
-                    .categoria { font-size: 12px; color: #c49a6c; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
-                    .titulo { font-size: 1.2em; color: #2c211b; margin: 10px 0; }
-                    .meta { font-size: 12px; color: #888; margin-bottom: 15px; }
-                    .resumen { line-height: 1.5; color: #555; }
-                    .etiquetas { margin-top: 15px; }
-                    .etiqueta { display: inline-block; background: #e9e2d5; color: #4a3b32; font-size: 11px; padding: 4px 8px; border-radius: 4px; margin-right: 5px; }
-                </style>
+                <meta charset="UTF-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+                <title>KFTROS - Blog</title>
+                <!-- Bootstrap CSS -->
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+                <!-- Font Awesome CSS -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+                <!-- ESTILOS CSS -->
+                <link href="../css/estilos.css" rel="stylesheet"/>
             </head>
-            <body>
-                <h1>☕ El Blog del Café de Especialidad</h1>
-                
-                <div class="grid-container">
-                    <xsl:for-each select="blog_cafe/articulo">
-                        <div class="card">
-                            <img class="card-imagen" src="../{imagen}" alt="{titulo}"/>
-                            <div class="categoria"><xsl:value-of select="categoria"/></div>
-                            <h2 class="titulo"><xsl:value-of select="titulo"/></h2>
-                            <div class="meta">
-                                Por <b><xsl:value-of select="autor"/></b> el <xsl:value-of select="fecha"/>
-                            </div>
-                            <p class="resumen"><xsl:value-of select="resumen"/></p>
-                            
-                            <div class="etiquetas">
-                                <xsl:for-each select="etiquetas/etiqueta">
-                                    <span class="etiqueta"><xsl:value-of select="."/></span>
-                                </xsl:for-each>
+            <body>9
+                <!-- Navbar -->
+                <header>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white shadow-lg fixed-top">
+                        <div class="container-fluid">
+                            <a class="navbar-brand fw-bold fs-3" href="/">KFTROS</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-5" href="/">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-5" href="../xml/nosotros.xml">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-5" href="../xml/productos.xml">Productos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active fs-5" aria-current="page" href="../xml/blog_cafe.xml">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-5" href="../views/contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </xsl:for-each>
-                </div>
+                    </nav>
+                </header>
+
+                <!-- Main -->
+                <main class="min-vh-100 pt-5">
+                    <!-- Sección de introducción -->
+                    <div class="container">
+                        <div class="text-center mb-5 pt-5 pb-3">
+                            <h1 class="fw-bold fs-1">
+                                <i class="fa-solid fa-blog"></i>
+                                Nuestro Blog
+                            </h1>
+                            <p class="text-muted fs-5">- Historias, técnicas y pasión por el buen café -</p>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN DE ARTÍCULOS -->
+                    <div class="container my-5">
+                        <div class="row g-4">
+                            <xsl:for-each select="blog_cafe/articulo">
+                                <div class="col-12">
+                                    <div class="card border-1 shadow-sm overflow-hidden rounded-4 h-100">
+                                        <div class="row g-0">
+                                            <!-- Imagen del artículo -->
+                                            <div class="col-md-6">
+                                                <img class="blog-card-img" src="{imagen}" alt="{titulo}"/>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <div class="card-body h-100 d-flex flex-column">
+                                                    <!-- Categoría -->
+                                                    <div class="mb-2">
+                                                        <span class="badge bg-warning text-dark fw-bold">
+                                                            <i class="fas fa-tag me-1"></i>
+                                                            <xsl:value-of select="categoria"/>
+                                                        </span>
+                                                    </div>
+                                                    
+                                                    <!-- Título -->
+                                                    <h4 class="card-title fw-bold mb-2">
+                                                        <xsl:value-of select="titulo"/>
+                                                    </h4>
+                                                    
+                                                    <!-- Meta información -->
+                                                    <div class="d-flex gap-3 mb-3 text-muted small">
+                                                        <span>
+                                                            <i class="fas fa-user me-1"></i>
+                                                            <xsl:value-of select="autor"/>
+                                                        </span>
+                                                        <span>|</span>
+                                                        <span>
+                                                            <i class="fas fa-calendar me-1"></i>
+                                                            <xsl:value-of select="fecha"/>
+                                                        </span>
+                                                    </div>
+                                                    
+                                                    <!-- Resumen -->
+                                                    <p class="card-text text-muted mb-3 lh-lg flex-grow-1">
+                                                        <xsl:value-of select="resumen"/>
+                                                    </p>
+                                                    
+                                                    <!-- Etiquetas -->
+                                                    <div class="mb-3">
+                                                        <xsl:for-each select="etiquetas/etiqueta">
+                                                            <span class="badge bg-light text-dark me-1 mb-1">
+                                                                #<xsl:value-of select="."/>
+                                                            </span>
+                                                        </xsl:for-each>
+                                                    </div>
+                                                    
+                                                    <!-- Botón leer más -->
+                                                    <a href="#" class="btn btn-outline-warning fw-bold align-self-start">
+                                                        <i class="fas fa-arrow-right me-2"></i>Leer más
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </xsl:for-each>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="container-fluid my-5">
+                        <div class="text-center rounded-3">
+                            <i class="fas fa-pen-fancy mt-4 mb-3 d-block" style="font-size: 4rem;"></i>
+                            <h1 class="mb-3">¿Tienes una historia cafetera?</h1>
+                            <p class="col-lg-8 mx-auto fs-5">
+                                Nos encantaría conocer tus experiencias, recetas y descubrimientos en el mundo del café. Contáctanos para colaborar en el blog.
+                            </p>
+                            <div class="d-inline-flex gap-2 mb-5">
+                                <a href="../views/contacto.html" class="d-inline-flex align-items-center btn btn-warning btn-lg px-4 rounded-pill text-dark" type="button">
+                                    Comparte tu historia
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </a>
+                                <a href="/" class="btn btn-outline-dark btn-lg px-4 rounded-pill" type="button">
+                                    Volver al inicio
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+
+                <!-- Footer -->
+                <footer class="bg-dark text-white py-4 mt-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5>KFTROS</h5>
+                                <p>Tu fuente de café de especialidad de calidad superior.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Enlaces Rápidos</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="/" class="text-white-50 text-decoration-none">Inicio</a></li>
+                                    <li><a href="/xml/nosotros.xml" class="text-white-50 text-decoration-none">Nosotros</a></li>
+                                    <li><a href="/xml/productos.xml" class="text-white-50 text-decoration-none">Productos</a></li>
+                                    <li><a href="/xml/blog_cafe.xml" class="text-white-50 text-decoration-none">Blog</a></li>
+                                    <li><a href="/views/contacto.html" class="text-white-50 text-decoration-none">Contacto</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Contacto</h5>
+                                <p class="mb-1">Email: info@kftros.com</p>
+                                <p class="mb-1">Teléfono: +34 942 123 456</p>
+                                <p>Síguenos en redes sociales</p>
+                                <ul class="list-unstyled d-flex gap-3">
+                                    <li><a href="#" class="text-white text-decoration-none"><i
+                                                class="fa-brands fa-instagram fa-lg"></i></a></li>
+                                    <li><a href="#" class="text-white text-decoration-none"><i
+                                                class="fa-brands fa-facebook fa-lg"></i></a></li>
+                                    <li><a href="#" class="text-white text-decoration-none"><i
+                                                class="fa-brands fa-twitter fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="bg-white-50"></hr>
+                        <div class="text-center d-flex align-items-center justify-content-center gap-2">
+                            <i class="fa-regular fa-copyright"></i>
+                            <p class="mb-0">2026 KFTROS. Todos los derechos reservados.</p>
+                        </div>
+                    </div>
+                </footer>
+
+                <!-- Bootstrap JS -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
             </body>
         </html>
     </xsl:template>

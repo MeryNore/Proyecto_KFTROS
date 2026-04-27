@@ -54,7 +54,10 @@
                     <div class="container">
                         <section class="row">
                             <div class="col-md-6 text-center align-self-center">
-                                <h1>Nuestra historia</h1>
+                                <h1 class="fw-bold fs-1 mb-3">
+                                    <i class="fa-solid fa-fingerprint"></i>
+                                    Nuestra historia
+                                </h1>
                                 <p class="lead text-muted">- Más allá de una simple taza -</p>
                                 <p>
                                     En KFTROS, creemos que el café es mucho más que una dosis de cafeína para sobrevivir a las mañanas. Para nosotros, es un viaje fascinante que conecta el esfuerzo de familias productoras a miles de kilómetros con el momento exacto en el que das el primer sorbo en tu casa.
@@ -73,31 +76,18 @@
                     <div class="container-fluid p-5 bg-dark text-white">
                         <section class="row">
                             <!-- carrucel de miembros del equipo -->
-                            <div class="col-md-6 mt-4 align-self-center">
-                                <div id="carouselEquipo" class="carousel carousel-dark slide">
-                                    <div class="carousel-indicators">
-                                        <xsl:for-each select="//persona">
-                                            <xsl:variable name="pos" select="position() - 1"/>
-                                            <button type="button" data-bs-target="#carouselEquipo" data-bs-slide-to="{$pos}">
-                                                <xsl:if test="position() = 1">
-                                                    <xsl:attribute name="class">active</xsl:attribute>
-                                                    <xsl:attribute name="aria-current">true</xsl:attribute>
-                                                </xsl:if>
-                                                <xsl:attribute name="aria-label">Slide <xsl:value-of select="position()"/></xsl:attribute>
-                                            </button>
-                                        </xsl:for-each>
-                                    </div>
-                                    <div class="carousel-inner">
+                            <div class="col-md-6 align-self-center">
+                                <div id="carouselEquipo" class="carousel slide">
+                                    <div class="carousel-inner overflow-hidden">
                                         <xsl:for-each select="//persona">
                                             <div class="carousel-item" data-bs-interval="5000">
                                                 <xsl:if test="position() = 1">
                                                     <xsl:attribute name="class">carousel-item active</xsl:attribute>
                                                 </xsl:if>
-                                                <img src="{imagen}" class="d-block w-100" alt="Miembro del equipo"/>
+                                                <img src="{imagen}" class="d-block w-100 carousel-img" alt="Miembro del equipo"/>
                                                 <div class="carousel-caption d-md-block bg-dark bg-opacity-75 p-4 rounded text-white text-opacity-75">
                                                     <h5>
                                                         <xsl:value-of select="datos_personales/nombre_completo/nombre"/>
-                                                        <xsl:text> </xsl:text>
                                                         <xsl:value-of select="datos_personales/nombre_completo/apellido1"/>
                                                     </h5>
                                                     <p class="mb-2">
@@ -115,6 +105,18 @@
                                             </div>
                                         </xsl:for-each>
                                     </div>
+                                    <div class="carousel-indicators">
+                                        <xsl:for-each select="//persona">
+                                            <xsl:variable name="pos" select="position() - 1"/>
+                                            <button type="button" data-bs-target="#carouselEquipo" data-bs-slide-to="{$pos}">
+                                                <xsl:if test="position() = 1">
+                                                    <xsl:attribute name="class">active</xsl:attribute>
+                                                    <xsl:attribute name="aria-current">true</xsl:attribute>
+                                                </xsl:if>
+                                                <xsl:attribute name="aria-label">Slide <xsl:value-of select="position()"/></xsl:attribute>
+                                            </button>
+                                        </xsl:for-each>
+                                    </div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselEquipo" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
@@ -127,7 +129,10 @@
                             </div>
                             
                             <div class="col-md-6 align-self-center">
-                                <h1>Nuestro equipo</h1>
+                                <h1 class="fw-bold fs-1 mb-3">
+                                    Nuestro equipo
+                                    <i class="fa-solid fa-people-roof"></i>
+                                </h1>
                                 <p class="lead">- Conoce a los profesionales detrás de tu café favorito -</p>
                                 <p>
                                     En KFTROS, nuestro equipo es el corazón de nuestra misión. Cada miembro aporta su pasión, experiencia y dedicación para ofrecerte el mejor café de especialidad. Desde los baristas que perfeccionan cada taza hasta los expertos en selección de granos que viajan por el mundo en busca de los mejores orígenes, nuestro equipo trabaja con un solo objetivo: brindarte una experiencia cafetera excepcional.
