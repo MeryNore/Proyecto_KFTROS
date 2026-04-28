@@ -75,7 +75,7 @@
                     <!-- Nuestro equipo -->
                     <div class="container-fluid p-5 bg-dark text-white min-vh-100 d-flex">
                         <div class="row w-100 mx-auto">
-                            <!-- carrucel de miembros del equipo -->
+                            <!-- carrucel de miembros del equipo. Genera los datos desde el XML -->
                             <div class="col-md-6 align-self-center p-lg-5">
                                 <div id="carouselEquipo" class="carousel slide">
                                     <div class="carousel-inner overflow-hidden">

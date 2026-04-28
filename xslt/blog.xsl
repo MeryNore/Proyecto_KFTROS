@@ -62,6 +62,7 @@
 
                     <!-- SECCIÓN DE ARTÍCULOS -->
                     <div class="container my-5">
+                        <!-- Datos generados desde el XML -->
                         <div class="row g-4">
                             <xsl:for-each select="blog_cafe/articulo">
                                 <div class="col-12 mb-4">

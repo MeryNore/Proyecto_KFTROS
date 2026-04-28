@@ -1,7 +1,11 @@
+/* Este script está diseñado para controlar el background de nuestra barra de navegación en distintos
+escenarios, para que no se mezcle con el contenido del resto de la web al hacer scroll o al desplegarla
+en pantallas más pequeñas */
+
+
 const navbar = document.getElementById('navbar');
 
-
-/* Poner color al navbar cuando scroleas hacia abajo para diferenciarla del contenido*/
+/* Poner color al navbar cuando scroleas hacia abajo para diferenciarla del contenido (SOLO PARA EL INDEX)*/
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
@@ -11,7 +15,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-/**/
+/* Poner color a la navbar cuando despliega en formato movil para que se diferencie del contenido*/
 document.addEventListener('DOMContentLoaded', function () {
     const menuColapsable = document.getElementById('navbarNav');
 

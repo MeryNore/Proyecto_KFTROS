@@ -59,6 +59,7 @@
                             </h2>
                             <p class="text-muted fs-5">- Selecciones premium de los mejores orígenes del mundo -</p>
                         </div>
+                        <!-- Datos generados desde el XML -->
                         <div class="row g-4">
                             <xsl:for-each select="//cafe/producto">
                                 <div class="col-md-6 col-lg-4">
@@ -118,6 +119,7 @@
                                 </h2>
                                 <p class="fs-5">- Todo lo que necesitas para preparar el café perfecto -</p>
                             </div>
+                            <!-- Datos generados desde el XML -->
                             <div class="row g-4">
                                 <xsl:for-each select="//utensilios/producto">
                                     <div class="col-md-6 col-lg-4">
@@ -177,6 +179,7 @@
                             </h2>
                             <p class="text-muted fs-5">- Recibe cafés de especialidad en tu puerta regularmente -</p>
                         </div>
+                        <!-- Datos generados desde el XML -->
                         <div class="row g-4">
                             <xsl:for-each select="//suscripciones/producto/suscripciones">
                                 <div class="col-md-6">
