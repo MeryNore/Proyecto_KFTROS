@@ -128,7 +128,7 @@
                                 </div>
                             </div>
                             
-                            <div class="col-md-6 align-self-center p-5">
+                            <div class="col-md-6 align-self-center py-5">
                                 <h1 class="fw-bold fs-1 mb-3">
                                     Nuestro equipo
                                     <i class="fa-solid fa-people-roof"></i>

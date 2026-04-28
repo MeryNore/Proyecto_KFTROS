@@ -65,7 +65,7 @@
                         <!-- Datos generados desde el XML -->
                         <div class="row g-4">
                             <xsl:for-each select="blog_cafe/articulo">
-                                <div class="col-12 mb-4">
+                                <div class="col-12">
                                     <div class="card border-1 shadow-sm overflow-hidden rounded-4 card-hover h-100">
                                         <div class="row g-0 h-100">
                                             <!-- Imagen del artículo -->
@@ -76,7 +76,7 @@
                                             <div class="col-12 col-md-8 col-lg-6">
                                                 <div class="card-body d-flex flex-column h-100 p-4 p-md-5">
                                                     <!-- Categoría -->
-                                                    <div class="mb-3">
+                                                    <div class="mb-2">
                                                         <span class="badge bg-warning text-dark fw-bold px-3 py-2">
                                                             <i class="fas fa-tag me-1"></i>
                                                             <xsl:value-of select="categoria"/>
@@ -102,12 +102,12 @@
                                                     </div>
                                                     
                                                     <!-- Resumen -->
-                                                    <p class="card-text text-muted mb-4 flex-grow-1">
+                                                    <p class="card-text text-muted mb-4">
                                                         <xsl:value-of select="resumen"/>
                                                     </p>
                                                     
                                                     <!-- Etiquetas -->
-                                                    <div class="mb-4">
+                                                    <div class="mb-3">
                                                         <xsl:for-each select="etiquetas/etiqueta">
                                                             <span class="badge bg-light text-dark me-2 mb-1 border py-2">
                                                                 #<xsl:value-of select="."/>
@@ -129,7 +129,7 @@
                     </div>
 
                     <!-- CTA -->
-                    <div class="container-fluid p-5 my-5">
+                    <div class="container-fluid">
                         <div class="text-center rounded-3">
                             <i class="fas fa-pen-fancy mt-4 mb-3 d-block" style="font-size: 4rem;"></i>
                             <h1 class="mb-3">¿Tienes una historia cafetera?</h1>
