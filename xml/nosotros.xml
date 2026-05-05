@@ -22,7 +22,7 @@
             <fecha_contratacion>2020-01-15</fecha_contratacion>
             <departamento>Dirección</departamento>
         </datos_empresa>
-        <imagen>/assets/images/personal/personal1.png</imagen>
+        <imagen>../assets/images/personal/personal1.png</imagen>
     </persona>
     <persona dni="76543210B">
         <datos_personales>
@@ -45,7 +45,7 @@
             <fecha_contratacion>2021-03-20</fecha_contratacion>
             <departamento>Ventas</departamento>
         </datos_empresa>
-        <imagen>/assets/images/personal/personal2.png</imagen>
+        <imagen>../assets/images/personal/personal2.png</imagen>
     </persona>
     <persona dni="76543210C">
         <datos_personales>
@@ -68,7 +68,7 @@
             <fecha_contratacion>2022-06-10</fecha_contratacion>
             <departamento>Almacén</departamento>
         </datos_empresa>
-        <imagen>/assets/images/personal/personal3.png</imagen>
+        <imagen>../assets/images/personal/personal3.png</imagen>
     </persona>
     <persona dni="76543210D">
         <datos_personales>
@@ -91,6 +91,6 @@
             <fecha_contratacion>2021-09-15</fecha_contratacion>
             <departamento>Operaciones</departamento>
         </datos_empresa>
-        <imagen>/assets/images/personal/personal4.png</imagen>
+        <imagen>../assets/images/personal/personal4.png</imagen>
     </persona>
 </personal>

@@ -7,7 +7,7 @@
         <autor>María Barista</autor>
         <fecha>2026-04-15</fecha>
         <categoria>Orígenes</categoria>
-        <imagen>/assets/images/blog/imagen1.png</imagen>
+        <imagen>../assets/images/blog/imagen1.png</imagen>
         <resumen>Un viaje por los perfiles de sabor de dos gigantes del café de especialidad. ¿Prefieres las delicadas notas florales africanas o el cuerpo dulce y achocolatado sudamericano?</resumen>
         <etiquetas>
             <etiqueta>Etiopía</etiqueta>
@@ -21,7 +21,7 @@
         <autor>Carlos Roaster</autor>
         <fecha>2026-04-18</fecha>
         <categoria>Métodos de Preparación</categoria>
-        <imagen>/assets/images/blog/imagen2.png</imagen>
+        <imagen>../assets/images/blog/imagen2.png</imagen>
         <resumen>Aprende los secretos del ratio (1:15), el tamaño de la molienda y la técnica de vertido por pulsos para sacarle el máximo partido a tu cafetera Hario V60.</resumen>
         <etiquetas>
             <etiqueta>V60</etiqueta>
@@ -35,7 +35,7 @@
         <autor>Elena Q-Grader</autor>
         <fecha>2026-04-20</fecha>
         <categoria>Tueste</categoria>
-        <imagen>/assets/images/blog/imagen3.png</imagen>
+        <imagen>../assets/images/blog/imagen3.png</imagen>
         <resumen>El tueste ligero no es una simple moda hipster. Descubre cómo un tueste omni o ligero ayuda a respetar el trabajo del productor y a resaltar el 'terroir' del grano.</resumen>
         <etiquetas>
             <etiqueta>Tueste</etiqueta>
@@ -48,7 +48,7 @@
         <autor>María Barista</autor>
         <fecha>2026-04-21</fecha>
         <categoria>Procesos</categoria>
-        <imagen>/assets/images/blog/imagen4.png</imagen>
+        <imagen>../assets/images/blog/imagen4.png</imagen>
         <resumen>Desde la cereza en la rama hasta el grano verde. Explicamos cómo el proceso post-cosecha en la finca define si tu café sabrá a frutas fermentadas o tendrá una acidez brillante y limpia.</resumen>
         <etiquetas>
             <etiqueta>Finca</etiqueta>
