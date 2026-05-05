@@ -19,7 +19,7 @@
                 <header>
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white shadow-lg fixed-top">
                         <div class="container-fluid">
-                            <a class="navbar-brand fw-bold fs-3" href="/">KFTROS</a>
+                            <a class="navbar-brand fw-bold fs-3" href="../index.html">KFTROS</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link fs-5" href="/">Inicio</a>
+                                        <a class="nav-link fs-5" href="../index.html">Inicio</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link fs-5" href="../xml/nosotros.xml">Nosotros</a>
@@ -141,7 +141,7 @@
                                     Comparte tu historia
                                     <i class="fas fa-arrow-right ms-2"></i>
                                 </a>
-                                <a href="/" class="btn btn-outline-dark btn-lg px-4 rounded-pill" type="button">
+                                <a href="../index.html" class="btn btn-outline-dark btn-lg px-4 rounded-pill" type="button">
                                     Volver al inicio
                                 </a>
                             </div>
@@ -161,11 +161,11 @@
                             <div class="col-md-4">
                                 <h5>Enlaces Rápidos</h5>
                                 <ul class="list-unstyled">
-                                    <li><a href="/" class="text-white-50 text-decoration-none">Inicio</a></li>
-                                    <li><a href="/xml/nosotros.xml" class="text-white-50 text-decoration-none">Nosotros</a></li>
-                                    <li><a href="/xml/productos.xml" class="text-white-50 text-decoration-none">Productos</a></li>
-                                    <li><a href="/xml/blog_cafe.xml" class="text-white-50 text-decoration-none">Blog</a></li>
-                                    <li><a href="/views/contacto.html" class="text-white-50 text-decoration-none">Contacto</a></li>
+                                    <li><a href="../index.html" class="text-white-50 text-decoration-none">Inicio</a></li>
+                                    <li><a href="../xml/nosotros.xml" class="text-white-50 text-decoration-none">Nosotros</a></li>
+                                    <li><a href="../xml/productos.xml" class="text-white-50 text-decoration-none">Productos</a></li>
+                                    <li><a href="../xml/blog_cafe.xml" class="text-white-50 text-decoration-none">Blog</a></li>
+                                    <li><a href="../views/contacto.html" class="text-white-50 text-decoration-none">Contacto</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-4">
